@@ -24,6 +24,17 @@ unfollow_route = '%s/web/friendships/%s/unfollow/'
 
 session = requests.Session()
 
+banner ("
+          ███████╗ █████╗ ██████╗ ███████╗
+          ██╔════╝██╔══██╗██╔══██╗╚══███╔╝
+          █████╗  ███████║██████╔╝  ███╔╝ 
+          ██╔══╝  ██╔══██║██╔══██╗ ███╔╝  
+          ██║     ██║  ██║██║  ██║███████╗
+          ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+      
+  Tool Özəl Olaraq MaragliWeb Kanalı üçün yazılmışdır.    
+        
+        ")
 
 class Credentials:
     def __init__(self):
@@ -34,8 +45,8 @@ class Credentials:
             self.username = sys.argv[1]
             self.password = sys.argv[2]
         else:
-            sys.exit('Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın.Tool Özəl Olaraq MaragliWeb Kanalı üçün yığılıb.')
-
+            sys.exit('Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın.')
+            print(banner)
 credentials = Credentials()
 def login():
     session.headers.update({
@@ -240,9 +251,9 @@ def main():
 
     if len(following_list) != connected_user['edge_follow']['count']:
         if len(following_list) > 0:
-            print('rebuilding following list...', end='', flush=True)
+            print('aşağıdakı siyahının yenidən qurulması...', end='', flush=True)
         else:
-            print('building following list...', end='', flush=True)
+            print('aşağıdakı siyahı..', end='', flush=True)
         following_list = get_following_list()
         print(' done')
 
