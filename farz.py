@@ -47,7 +47,7 @@ class Credentials:
             self.password = sys.argv[2]
         else:
             sys.exit('Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın.')
-            print(banner)
+            print('banner')
 credentials = Credentials()
 def login():
     session.headers.update({
