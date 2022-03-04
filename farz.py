@@ -10,7 +10,6 @@ import requests, pickle
 import json
 import re
 from datetime import datetime
-from simple_colors import *
 
 cache_dir = 'cache'
 session_cache = '%s/session.txt' % (cache_dir)
@@ -47,17 +46,17 @@ class Credentials:
             self.username = sys.argv[1]
             self.password = sys.argv[2]
         else:
-            sys.exit(green("""Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın
+            sys.exit("""Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın
             
             
-                                     ███████╗ █████╗ ██████╗ ███████╗
-                                     ██╔════╝██╔══██╗██╔══██╗╚══███╔╝
-                                     █████╗  ███████║██████╔╝  ███╔╝ 
-                                     ██╔══╝  ██╔══██║██╔══██╗ ███╔╝  
-                                     ██║     ██║  ██║██║  ██║███████╗
-                                     ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+                               ███████╗ █████╗ ██████╗ ███████╗
+                               ██╔════╝██╔══██╗██╔══██╗╚══███╔╝
+                               █████╗  ███████║██████╔╝  ███╔╝ 
+                               ██╔══╝  ██╔══██║██╔══██╗ ███╔╝  
+                               ██║     ██║  ██║██║  ██║███████╗
+                               ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
       
-                        Tool Özəl Olaraq Nihat 「 FARZ 」tərəfindən MaragliWeb Kanalı üçün yazılmışdır"""  ))
+              Tool Özəl Olaraq Nihat FARZ tərəfindən MaragliWeb Kanalı üçün yazılmışdır""")
 credentials = Credentials()
 def login():
     session.headers.update({
