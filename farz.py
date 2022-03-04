@@ -46,8 +46,7 @@ class Credentials:
             self.username = sys.argv[1]
             self.password = sys.argv[2]
         else:
-            sys.exit('Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın.')
-            print('banner')
+            sys.exit('Zəhmət olmasa - python farz.py login şifrə -  yazaraq avto unfollow sistemin başladın.' banner )
 credentials = Credentials()
 def login():
     session.headers.update({
