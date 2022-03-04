@@ -24,7 +24,8 @@ unfollow_route = '%s/web/friendships/%s/unfollow/'
 
 session = requests.Session()
 
-banner = ("
+banner = ("""
+          
           ███████╗ █████╗ ██████╗ ███████╗
           ██╔════╝██╔══██╗██╔══██╗╚══███╔╝
           █████╗  ███████║██████╔╝  ███╔╝ 
@@ -34,7 +35,7 @@ banner = ("
       
    Tool Özəl Olaraq MaragliWeb Kanalı üçün yazılmışdır.    
          
- ")
+""")
 
 class Credentials:
     def __init__(self):
