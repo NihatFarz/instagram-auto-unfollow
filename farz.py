@@ -10,7 +10,7 @@ import requests, pickle
 import json
 import re
 from datetime import datetime
-from simple_colors import
+from simple_colors import *
 
 cache_dir = 'cache'
 session_cache = '%s/session.txt' % (cache_dir)
