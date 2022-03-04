@@ -7,9 +7,9 @@
  <br>
  <br>
 <p align="center">  
-🇦🇿-Tool İnstagram da takib(follow) etdyiniz istifadəçiləri Termux ilə avtomatik takibdən(unfollow) edilməsi üçün yazılmışdır. 
+🇦🇿 Tool İnstagram da takib(follow) etdyiniz istifadəçiləri Termux ilə avtomatik takibdən(unfollow) edilməsi üçün yazılmışdır. 
 <p align="center">  
-🇱🇷-The tool is written to unfollow the users you follow on Instagram with Termux.  
+🇱🇷 The tool is written to unfollow the users you follow on Instagram with Termux.  
  <br>
  <br>  
   
